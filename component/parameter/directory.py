@@ -6,5 +6,7 @@ from pathlib import Path
 module_dir = Path('~','module_results').expanduser()
 module_dir.mkdir(exist_ok=True)
 
-# add all the directory that will be used in the app. 
-tmp_dir = Path('~', 'tmp').expanduser()
+# the data_test directory 
+data_test_dir = Path(__file__).parents[2].joinpath('data_test').expanduser()
+data_test_dir.mkdir(exist_ok=True)
+

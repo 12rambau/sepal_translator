@@ -1,4 +1,7 @@
-# Byte-compiled / optimized / DLL files
+# custom folders 
+data_test
+ 
+#te-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
