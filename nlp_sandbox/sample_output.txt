@@ -1,0 +1,162 @@
+source : Failed: {action}
+original : Echec: {action}
+translated : ['Echec : {action}']
+source : Auto-select scenes
+original : Sélectionner les scènes
+translated : ['Auto-sélectionner les scènes']
+source : Duplicate recipe
+original : Dupliquer la formule
+translated : ['Dupliquer la formule']
+source : Initialize Google Maps
+original : Initialiser Google Maps
+translated : ['Initialiser Google Maps']
+source : Load applications
+original : Charger les applications
+translated : ['Charger les applications']
+source : Load countries
+original : Charger les pays
+translated : ['Charger les pays']
+source : Load areas of country
+original : Charger les superficies pays
+translated : ['Charger les zones du pays']
+source : Load current user
+original : Charger l'utilisateur
+translated : ["Charger l'utilisateur courant"]
+source : Load user directory
+original : Charger le répertoire utilisateur
+translated : ['Charger le répertoire utilisateur']
+source : Load Fusion Table columns
+original : Charger noms (tables de fusion)
+translated : ['Charger les colonnes de table de fusion']
+source : Load Fusion Table rows
+original : Charger lignes (tables de fusion)
+translated : ['Charger les lignes de table de fusion']
+source : Load recipe
+original : Charger la formule
+translated : ['Charger la formule']
+source : Load recipes
+original : Charger les formules
+translated : ['Charger les formules']
+source : Load scene areas
+original : Charger les superficies des scènes
+translated : ['Charger les scènes']
+source : Load scenes
+original : Charger les scènes
+translated : ['Charger les scènes']
+source : Login
+original : S'identifier
+translated : ["S'identifier"]
+source : Remove directory
+original : Effacer répertoire
+translated : ['Supprimer le répertoire']
+source : Remove file
+original : Effacer fichier
+translated : ['Supprimer le fichier']
+source : Remove task
+original : Effacer tâche
+translated : ['Supprimer la tâche']
+source : Request password reset
+original : Demander un nouveau mot de passe
+translated : ['Demander mot de passe réinitialisé']
+source : Reset password
+original : Réinitialiser le mot de passe
+translated : ['Réinitialiser mot de passe']
+source : Restart task
+original : Recharger la tâche
+translated : ['Redémarrer la tâche']
+source : Open application
+original : Ouvrir application
+translated : ["Ouvrir l'application"]
+source : Update background tasks
+original : MAJ tâches de fond
+translated : ['Mise à jour des tâches de fond']
+source : Schedule user info request
+original : Requête d'information utilisateur
+translated : ["Demande d'information utilisateur"]
+source : Stop task
+original : Arrêter la tâche
+translated : ['Arrêter la tâche']
+source : Validate link
+original : Valider le lien
+translated : ['Lien valide']
+source : Developed by {author}
+original : Développé par {author}
+translated : ['Développé par {author}']
+source : Search apps
+original : Rechercher une App
+translated : ['Chercher des applications']
+source : All
+original : Tout
+translated : ['Tout']
+source : SEPAL needs to be connected to your Google Account to use this app
+original : SEPAL doit être connecté à votre compte Google pour utiliser cette application
+translated : ['SEPAL doit être connecté à votre compte Google pour utiliser cette application']
+source : Show information about this app
+original : Afficher les informations de cette application
+translated : ['Afficher les informations sur cette application']
+source : Starting session...
+original : Démarrer une session...
+translated : ['Début de la session...']
+source : Failed to load apps. Try to reload the page.
+original : Echec de chargement. Recharger la page
+translated : ['Impossible de charger les applications. Essayez de recharger la page.']
+source : Loading...
+original : Chargement...
+translated : ['Chargement...']
+source : App is not running
+original : L'app ne fonctionne pas
+translated : ["L'app ne fonctionne pas"]
+source : Failed to run {label}
+original : Echec d'exécution {label}
+translated : ["Echec de l'exécution {label}"]
+source : App is running
+original : L'app est lancée
+translated : ["L'app fonctionne"]
+source : Failed to load EE asset
+original : Échec du chargement de l'asset EE
+translated : ["Impossible de charger l'asset EE"]
+source : Asset not found
+original : Table EE introuvable
+translated : ['Asset introuvable']
+source : You don't have access to this asset
+original : Vous n'avez pas accès à cette Table EE
+translated : ["Vous n'avez pas accès à cet asset"]
+source : Aerosol
+original : Aerosol
+translated : ['Aerosol']
+source : Blue
+original : Bleu
+translated : ['Bleu']
+source : Brightness
+original : Luminosité
+translated : ['Luminosité']
+source : Cirrus
+original : Cirrus
+translated : ['Cirrus']
+source : Day of year
+original : Jour Julien
+translated : ["Jour de l'année"]
+source : Days from target
+original : Jours de la date-cible
+translated : ['Jours de la date cible']
+source : Green
+original : Vert
+translated : ['Vert']
+source : Greenness
+original : Verdeur
+translated : ['Vertosité']
+source : NIR
+original : NIR
+translated : ['NIR']
+source : Pan
+original : PAN
+translated : ['Pan']
+source : Red
+original : Rouge
+translated : ['Rouge']
+source : Red edge 1
+original : Rouge - bord 1
+translated : ['Rouge - bord 1']
+source : Red edge 2
+original : Rouge - bord 2
+translated : ['Rouge - bord 2']
