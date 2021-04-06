@@ -1,3 +1,6 @@
+from pathlib import Path
+import json
+
 import ipyvuetify as v
 from sepal_ui import sepalwidgets as sw
 
@@ -5,72 +8,40 @@ class KeyTree(sw.SepalWidget, v.Treeview):
     
     def __init__(self, folder, locales):
         
+        # get the english file (source language)
+        self.en_file = folder.joinpath('en.json')
+        
+        # check the file 
+        if not self.en_file.is_file():
+            raise Exception("no en file")
+            
+        # read the data 
+        with self.en_file.open() as f: 
+            en_data = json.loads(f.read())
+        
         # create the tree items 
-        items = [
-            {
-                'name': 'Applications :',
-                'children': [
-                    { 'name': 'Calendar : app' },
-                    { 'name': 'Chrome : app' },
-                    { 'name': 'Webstorm : app' },
-                ],
-            },
-            {
-                'name': 'Documents :',
-                'children': [
-                    {
-                        'name': 'vuetify :',
-                        'children': [
-                            {
-                                'name': 'src :',
-                                'children': [
-                                    { 'name': 'index : ts' },
-                                    { 'name': 'bootstrap : ts' },
-                                ],
-                            },
-                        ],
-                    },
-                    {
-                        'name': 'material2 :',
-                        'children': [
-                            {
-                                'name': 'src :',
-                                'children': [
-                                    { 'name': 'v-btn : ts' },
-                                    { 'name': 'v-card : ts' },
-                                    { 'name': 'v-window : ts' },
-                                ],
-                            },
-                        ],
-                    },
-                ],
-            },
-            {
-                'name': 'Downloads :',
-                'children': [
-                    { 'name': 'October : pdf' },
-                    { 'name': 'November : pdf' },
-                    { 'name': 'Tutorial : html' },
-                ],
-            },
-            {
-                'name': 'Videos :',
-                'children': [
-                    {
-                        'name': 'Tutorials :',
-                        'children': [
-                            { 'name': 'Basic layouts : mp4' },
-                            { 'name': 'Advanced techniques : mp4' },
-                            { 'name': 'All about app : dir' },
-                        ],
-                    },
-                    { 'name': 'Intro : mov' },
-                    { 'name': 'Conference introduction : avi' },
-                ],
-            },
-        ]
+        items = self._get_items(en_data)
         
         # create the tree 
         super().__init__(
             items = items
         )
+        
+    def _get_items(self, v):
+
+        list_ = []
+
+        # create an enum object 
+        if isinstance(v, dict):
+            enum = v.items()
+        elif isinstance(v, list):
+            enum = enumerate(v)
+
+        for k, v2 in enum:
+            item = {'name': k}
+            if isinstance(v2, dict) or isinstance(v2, list):
+                item['children'] = self._get_items(v2)
+
+            list_.append(item)
+
+        return list_
