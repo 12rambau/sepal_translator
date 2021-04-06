@@ -1,5 +1,6 @@
 # custom folders 
 data_test
+nlp_sandbox/data
  
 #te-compiled / optimized / DLL files
 __pycache__/
